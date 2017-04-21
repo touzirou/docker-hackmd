@@ -1,14 +1,24 @@
 {
     "production": {
+        "domain":"example.com",
         "urladdport": true,
-        "email": true,
+        "email": false,
         "db": {
-            "username": "hackmd",
-            "password": "hackmdpass",
+            "username": "user",
+            "password": "pass",
             "database": "hackmd",
-            "host": "hackmdPostgres",
-            "port": "5432",
-            "dialect": "postgres"
-        }
+            "host": "localhost",
+            "port": "3306",
+            "dialect": "mysql"
+        },
+        "imageUploadType" : "s3",
+        "s3" : {
+            "accessKeyId" : "",
+            "secretAccessKey" : "",
+            "region" : "us-west-2",
+            "bucket" : ""
+        },
+        "defaultpermission" : "editable",
+        "allowanonymous" : false
     }
 }
